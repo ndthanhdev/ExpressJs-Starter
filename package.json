@@ -1,5 +1,5 @@
 {
-  "name": "ExpressJs-Starter-Kit",
+  "name": "ExpressJs-Starter",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thanhtdt/ExpressJs-Starter-Kit.git"
+    "url": "git+https://github.com/thanhtdt/ExpressJs-Starter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thanhtdt/ExpressJs-Starter-Kit/issues"
+    "url": "https://github.com/thanhtdt/ExpressJs-Starter/issues"
   },
-  "homepage": "https://github.com/thanhtdt/ExpressJs-Starter-Kit#readme",
+  "homepage": "https://github.com/thanhtdt/ExpressJs-Starter#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "compression": "^1.7.0",
