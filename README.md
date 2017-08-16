@@ -1,4 +1,4 @@
-# ExpressJs-Starter-Kit
+# ExpressJs-Starter
 
 Getting Started
 ---------------
