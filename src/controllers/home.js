@@ -1,9 +1,9 @@
-import { Request, Response } from "express";
+var express = require("express");
 
 /**
  * GET /
  * Home page.
  */
-export let index = (req, res) => {
+exports.index = (req, res) => {
     res.end("Server is running");
 };

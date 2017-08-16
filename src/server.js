@@ -2,12 +2,12 @@
 /**
  * Module dependencies.
  */
-import express from "express";
-import compression from "compression";  // compresses requests
-import bodyParser from "body-parser";
-import logger from "morgan";
-import errorHandler from "errorhandler";
-import dotenv from "dotenv";
+var express = require("express");
+var compression = require("compression");  // compresses requests
+var bodyParser = require("body-parser");
+var logger = require("morgan");
+var errorHandler = require("errorhandler");
+var dotenv = require("dotenv");
 
 /**
  * Load environment variables from .env file, where API keys and passwords are configured.
@@ -17,7 +17,7 @@ dotenv.config({ path: ".env.example" });
 /**
  * Controllers (route handlers).
  */
-import * as homeController from "./controllers/home";
+var homeController =  require("./controllers/home");
 
 /**
  * Create Express server.
