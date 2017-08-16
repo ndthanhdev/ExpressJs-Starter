@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "npm run eslint && nodemon --watch src --exec \"npm run serve\"",
-    "serve": "node --inspect src/server.js",
+    "start": "npm run eslint && npm run watch",
+    "watch": "nodemon -e js --watch ./ --ignore node_modules --exec \"npm run serve\"",
+    "serve": "node --inspect server.js",
     "test": "jest",
     "eslint": "eslint **/*.js"
   },
