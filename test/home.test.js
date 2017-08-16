@@ -1,5 +1,5 @@
-var jest = require("jest");
-var supertest = require("supertest");
+require("jest");
+const supertest = require("supertest");
 const request = supertest("http://localhost:3000");
 
 describe("GET /", () => {

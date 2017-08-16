@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "nodemon --watch src --exec \"npm run serve\"",
+    "start": "npm run eslint && nodemon --watch src --exec \"npm run serve\"",
     "serve": "node --inspect src/server.js",
-    "test": "jest"
+    "test": "jest",
+    "eslint": "eslint **/*.js"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,31 @@
     "morgan": "^1.8.2"
   },
   "devDependencies": {
+    "eslint": "^4.4.1",
+    "eslint-plugin-jest": "^20.0.3",
     "jest": "^20.0.4",
     "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "rules": {
+      "comma-dangle": 0,
+      "consistent-return": 0,
+      "no-param-reassign": 0,
+      "no-underscore-dangle": 0,
+      "no-shadow": 0,
+      "no-console": 0,
+      "no-plusplus": 0,
+      "no-unused-expressions": 0
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "plugins": [
+      "jest"
+    ]
   }
 }
